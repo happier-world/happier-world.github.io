@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	text-align: center;
+	background-color: #e9ddc8;
+	font-family: Trebuchet MS, Tahoma, Arial, sans-serif;
+}
+
+a {
+	padding: 15px;
+	margin: 3px;
+	font-size: 125%;
+	background-color: #DDC8E9;
+	color: black;
+}
+
+a:hover {
+	font-size: 150%;
+	background-color: #5c23b1;
+	color: white;	
+}
+
+h2 {
+	color:blueviolet;
+}
