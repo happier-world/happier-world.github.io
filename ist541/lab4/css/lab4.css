@@ -2,9 +2,7 @@
 /* CSS Document */
 
 body {
-	background-image: url("../img/background-cropped.png"); /* background image*/
-	color: #444   /* text color for the entire document */
-	font-size: 12px
+	color: #0b0b0b;   /* text color for the entire document */
 	text-align: center;
 	background-color: #e9ddc8;
 	font-family: Trebuchet MS, Tahoma, Arial, sans-serif;
