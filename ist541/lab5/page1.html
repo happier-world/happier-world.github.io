@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+	<title> Shoes </title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+</head>
+
+<body>
+	<h1> Running for Fun </h1>
+	<br><br>
+	
+		<div id="menu">		
+			<a href="index.html">Home</a>
+			<a href="page1.html">Shoes</a>
+			<a href="page2.html">Coaching</a>
+			<a href="page3.html">Preparing</a>
+			<a href="page4.html">Stretching</a>
+			<a href="page5.html">Routes</a>
+			<a href="page6.html">Events</a>
+		</div>
+	
+	<br>
+	
+	<div id="wrapper">
+		
+		<div id="header">
+			<h2> Choosing the Right Shoes </h2>
+		</div>
+		
+			<p>Shoes are your most important piece of running equipment. And one pair of shoes will not support every running condition, meaning you need trail shoes for dirt trails and road shoes for paved paths. You may even need race shoes for race day and training shoes for the runs leading up to an event.</p>
+ 
+			<p><b>Observe how the tread varies between trail shoes and road shoes:</b></p>
+ 
+			<h4>Hint: Hover over the image below to view the difference.</h4>
+ 
+			<img onmouseenter="showRoadShoe()" id="trail_shoe_image"  src="img/trail-shoes.png" alt="blue trail shoes with one shoe revealing the knobby bottom tread"/>
+ 
+			<img onmouseleave="hideRoadShoe()" id="road_shoe_image" src="img/road-shoes.png" alt="pink road shoes with one shoe revealing the smooth bottom tread"/>
+ 
+           <div id="answer"></div>  <!-- This is a placeholder to display here the answer-->
+		
+		<script>
+			 function showRoadShoe() {
+				   $("#trail_shoe_image").hide();
+				   $("#road_shoe_image").show();
+				   $("#answer").html("<h4>Road shoes have smooth tread.</h4>");
+				}
+
+			function hideRoadShoe() {
+				   $("#trail_shoe_image").show();
+				   $("#road_shoe_image").hide();
+				   $("#answer").html("<h4>Trail shoes have knobby tread.</h4>");  
+				}
+		</script>
+			
+			<p>Furthermore, each runner's needs are unique, so a shoe that works for me may not work for you. A "neutral" shoe works well for runners with an evenly centered foot strike. A "stability" shoe works well for runners that roll their foot inward or outward when they strike the ground. Cushioning also plays a role in long-term comfort. Since your shoes support your skeletal structure and protect your joints from pounding the road, it's important to invest in proper footwear. <b>Don't skimp on your shoes!</b></p>
+		
+			<p>So how can you get help selecting a shoe? <b>Fleet Feet</b> is a running outfitter with store locations nationwide. They offer personalized fitting services to help you find the right running shoes for you. Check out their article on: 
+			</p>
+		
+			<h4><a href="https://www.fleetfeet.com/how-to-start-running/choosing-running-shoes" target="_blank">How to Choose Running Shoes</a></h4>
+		
+			<br>
+		
+			<h2> Tracking Shoe Mileage </h2>	
+			
+			<p>Watch this demonstration to see how you can track the mileage on your shoes using the Nike Run Club app.</p>
+		
+		<div class="mediaContent">
+			<video controls width="720" class="video">
+				<source src="video/NRC-app-shoe-tracking-feature.mp4" type="video/mp4" />
+				<source src="video/captions.ogg" type="video/ogg" />
+				<track id="entrack" label="English subtitles" kind="captions" src="video/captions.vtt" srclang="en" default>
+				HTML5 video not supported.
+			</video>
+		</div>
+		
+			<h2> How to Tie Your Shoes </h2>
+		
+			<p>Listen to Nike Running Global Head Coach Chris Bennett to learn how to tie your shoes the right way.</p>
+		
+		<div class="mediaContent">
+			<table border="0">
+				<tr>
+					<td>
+						<img src="img/how_to_tie_shoes.png" alt="close up of person tying laces on a running shoe"/>
+					</td>
+
+					<td>
+						<audio controls src="audio/how_to_tie_your_shoes.mp3">
+						This browser does not support HTML5 audio.
+						</audio>
+
+						<h3 class="important">
+						<span class="material-icons">warning</span>
+						<br>
+						Flex your ankle to prevent <br>tying your laces too tight.</h3>					
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
