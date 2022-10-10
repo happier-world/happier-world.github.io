@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	
+	<title> Routes </title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300&display=swap" rel="stylesheet">
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+	<h1> Running for Fun </h1>
+	<br><br>
+	
+		<div id="menu">		
+			<a href="index.html">Home</a>
+			<a href="page1.html">Shoes</a>
+			<a href="page2.html">Coaching</a>
+			<a href="page3.html">Preparing</a>
+			<a href="page4.html">Stretching</a>
+			<a href="page5.html">Routes</a>
+			<a href="page6.html">Events</a>
+		</div>
+	
+	<br>
+	
+	<div id="wrapper">
+		
+		<div id="header">
+			<h2> Finding a Route </h2>
+		</div>		
+					
+			<p>Part of the joy of running is enjoying the environment you're running in. If you find the sights, sounds, and smells of your typical route stressful or boring, then it's time to find a new trail.</p>
+		
+			<p>Open space parks are excellent running locations. They give your joints a break from the hard pavement, give your ears a rest from the city's hustle and bustle, gift your lungs with fresher air, stimulate your mind with winding trails, and challenge your body with some ups and downs. The Bay Area offers regional open space parks in all corners of the bay. Check out some of the offerings below.</p>
+
+		<p><b>In which region of the bay do you live?</b></p>
+
+			<table border="0">
+				<tr>
+					<td>
+						<h4>Select from the following choices:</h4>
+					</td>
+					<td onclick="NorthBay()" class="buttons">		
+						<p class="choices"><b>North</b></p>
+					</td>
+					<td onclick="EastBay()" class="buttons">
+						<p class="choices"><b>East</b></p>
+					</td>
+					<td onclick="SouthBay()" class="buttons">
+						<p class="choices"><b>South</b></p>
+					</td>
+					<td onclick="Peninsula()" class="buttons">
+						<p class="choices"><b>Peninsula</b></p>
+					</td>
+				</tr>
+			</table>
+			
+		<div id="feedback"></div>
+			<img id="bay-area-map" src="img/bay-area-map-dim-text.png" alt="Google map of bay area"/>
+			<img id="north_bay_map" src="img/north-bay-parks.png" alt="Google map of regional parks in the north bay"/>
+			<img id="east_bay_map" src="img/east-bay-parks.png" alt="Google map of regional parks in the east bay"/>
+			<img id="south_bay_map" src="img/south-bay-parks.png" alt="Google map of regional parks in the south bay"/>
+			<img id="peninsula_map" src="img/peninsula-parks.png" alt="Google map of regional parks in the peninsula"/>
+			
+		<div>
+			<h2> Sequoia Bayview Trail in Joaquin Miller Park </h2>
+		
+			<p>Here is a fantastic 5k out-and-back route in the East Bay. It includes gentle hills under a canopy of redwoods.</p>
+
+			<!-- iFrame code will be added below -->
+			<iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Eyp4FuN9W8ZAAIftWkI9_lhDjNhb0_8&ehbc=2E312F" width="640" height="480"></iframe>		
+		</div>
+	</div>
+	
+			<script>
+			function NorthBay() {
+			$("#feedback").html("<p><b>Regional Parks of the North Bay</b></p>");
+			$("#north_bay_map").show();
+			$("#bay-area-map").hide();
+			$("#east_bay_map").hide();
+			$("#south_bay_map").hide();
+			$("#peninsula_map").hide();
+			}
+			
+			function EastBay() {
+			$("#feedback").html("<p><b>Regional Parks of the East Bay</b></p>");
+			$("#bay-area-map").hide();
+			$("#north_bay_map").hide();
+			$("#east_bay_map").show();
+			$("#south_bay_map").hide();
+			$("#peninsula_map").hide();
+			}
+			
+			function SouthBay() {
+			$("#feedback").html("<p><b>Regional Parks of the South Bay</b></p>");
+			$("#bay-area-map").hide();
+			$("#north_bay_map").hide();
+			$("#east_bay_map").hide();
+			$("#south_bay_map").show();
+			$("#peninsula_map").hide();
+			}
+			
+			function Peninsula() {
+			$("#feedback").html("<p><b>Regional Parks of the Peninsula</b></p>");
+			$("#bay-area-map").hide();
+			$("#north_bay_map").hide();
+			$("#east_bay_map").hide();
+			$("#south_bay_map").hide();
+			$("#peninsula_map").show();
+			}
+		</script>
+
+</body>
+</html>

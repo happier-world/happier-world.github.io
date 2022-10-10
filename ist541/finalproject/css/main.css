@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	text-align: left;
+	line-height: 1.5;
+	background-color: #e9ddc8;   /* background color */
+	color: #0b0b0b;          /* text color for the entire page */
+	font-size: 16px;
+	font-family: Trebuchet MS, Tahoma, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 36px;
+}
+
+h2 { 
+	text-align: left;    
+	color: blueviolet;
+	font-size: 36px;
+	font-family: 'Kalam', cursive;     /* font style for page sub-headings */
+}
+
+h3 {
+	text-align: left;
+	color: blueviolet;
+	font-size:18px;     /* size of Tips and Alert text */
+}
+
+h4 {
+	text-align: left;
+	color: blueviolet;
+	font-size:18px;
+	font-family: 'Kalam', cursive;     /* font style for image captions */
+}
+
+h5 {
+	text-align: center;
+	color: blueviolet;
+	font-size:18px;
+	font-family: 'Kalam', cursive;     /* font style for image captions */
+}
+
+a {
+	padding: 10px;
+	margin: 3px;
+	border-radius: 5px;
+	box-shadow: 0 2px 2px 0 gray, 0 2px 5px 0 gray;
+	font-size: 20px;
+	background-color: #DDC8E9;
+	color: black;
+}
+
+a:hover {
+	background-color: #5c23b1;
+	color: white;	
+}
+
+img {
+	border-radius: 10px;
+	box-shadow: 0 4px 4px 0 gray, 0 4px 10px 0 gray;
+}
+
+audio {
+	width: 300px;  /* sets the width of the audio controls */
+}
+
+table {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+tr {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+td {
+	padding-top: 0px;
+	padding-bottom: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	border: hidden;
+}
+
+/* styles for the "wrapper" div, notice that "wrapper" is preceded by "#" */
+#wrapper {
+	width:1200px;
+	margin:0 auto;    /* centers wrapper */
+}
+
+#menu {
+	text-align: center;
+}
+
+#trail_shoe_image {
+	border: black 5px solid;
+}
+
+#road_shoe_image {
+	display: none; /* hides content */
+	border: black 5px solid;
+}
+
+#north_bay_map {
+	display: none; /* hides content */
+}
+
+#south_bay_map {
+	display: none; /* hides content */
+}
+
+#east_bay_map {
+	display: none; /* hides content */
+}
+
+#peninsula_map {
+	display: none; /* hides content */
+}
+
+#shoulders_arms {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* styles for the "stepTitle" class, notice that "stepTitle" is preceded by a dot */
+.stepTitle{
+	padding:10px;
+	text-align:left;
+	font-size:18px;
+	font-weight: bold;
+	background-color:#DDC8E9;
+	box-shadow: 0 4px 4px 0 gray, 0 4px 10px 0 gray;
+ }
+
+.stepContent{ 
+	background-color: white;
+	padding:10px;
+	display: flex;
+	justify-content: center;
+	box-shadow: 0 4px 4px 0 gray, 0 4px 10px 0 gray;
+}
+
+.stepContent2{ 
+	padding:10px;
+	display: flex;
+	justify-content: center;
+}
+
+.stepDescription {
+	width:55%;
+	padding:5px;
+}
+
+.stepImage {
+	width:40%;	
+	padding:10px;
+	text-align: center;
+}
+
+.regDescription {
+	width:55%;
+}
+
+.important {
+	background-color: #DDC8E9;
+	text-align: center;
+	padding:10px;
+	border-radius:10px;
+}
+
+.material-icons {
+	color:blueviolet;
+	font-size:3em;
+}
+
+.resource {
+	background-color: #DDC8E9;
+	padding:10px;
+	border-radius:10px;
+}
+
+.mediaContent {
+	background-color: #e9ddc8;
+	padding:10px;
+	border-radius:10px;
+	display: flex;
+	justify-content: left;
+}
+
+.buttons {
+	padding: 15px;
+	margin: 5px;
+	color: blueviolet;
+
+}
+.choices {
+cursor: pointer;
+}
